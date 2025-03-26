@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class A{
+    private:
+    int a;
+    int b;
+    public:
+    void get_data(int a,int b){
+        cout<<"value of a is : "<<a<<endl;
+        cout<<"value of b is : "<<b<<endl;
+    }
+};
+class B{
+    private:
+    int c;
+    int d;
+    public:
+    void get_data1(int c,int d){
+        cout<<"value of c is : "<<c<<endl;
+        cout<<"value of d is : "<<d<<endl;
+    }
+};
+class C:public A,public B{
+
+};
+int main(){
+    C obj;
+    obj.get_data(10,30);
+    obj.get_data1(30,40);
+    return 0;
+}
