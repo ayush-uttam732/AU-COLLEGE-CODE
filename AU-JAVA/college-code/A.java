@@ -6,6 +6,11 @@ public class A{
         Scanner obj=new Scanner(System.in);
         n=obj.nextInt();
         System.out.println("N is : "+n);
-        obj.close();
-}
+        if(n%2==0){
+            System.out.println("N is even");
+        }
+        else{
+            System.out.println("N is odd");
+        }
+        System.out.println("N is : "+n);
 };
